@@ -7,6 +7,20 @@
 
 ## How
 
+* omg
+* a list
+* how lit
+
+`saturn` valley
+
+```
+big block
+of text 
+inside 
+block
+code
+```
+
 [A very fun link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
-![Image](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxQQDhAPDRIRDg4WEA8VDg0NEg8RDg4RFREiIiASGRckHTQsGCYqGxMfJTUkMSkrLjouFx8/PTMsNygtLisBCgoKDQ0NGA8QGisdHR03KzcrLjUtKy0tOCsrNys3LTc0ODcuLiw1Nys3KystODcxNysrLjc3Ky0tNysrNzc3N//AABEIAZAABwMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQUCAwYEB//EACQQAQACAQIGAgMAAAAAAAAAAAABAhESFAMEBRMhYYGxMUFx/8QAGgEAAgIDAAAAAAAAAAAAAAAAAAQDBgECBf/EACERAQACAgEDBQAAAAAAAAAAAAABEgIRFAMEkQUhMUJx/9oADAMBAAIRAxEAPwD7fWJ/c5E5AGGpDVqElUVmnUNGoTVLXaNY06kJ6lbtUWGvKUui9nkniyK+nO0rec54lPOJiZpM+/Qmn8Lx7/bXlzfe9it3AlaUlUbgeMa7P0he8LpfpDueH0vRTzE2xEZmIm1p94FYn1SZ+HYjtFhzXPVrM5nED5x1DqtrfmcQhXY6EytEdtjEamXH851XM+Bz1+KO/j0MYhysu6zmd7eS10tYb0R2ABhKEyAM9Xz/AHPkYZACBAAAAMtEiy2o2qFztxY9sT1YWWzQvuwGaYsala7UW3ahDm8mVg4eJqQsKckEdZGZ6+DoqcoLXAdpCs8jJIDcuygKRjxj6wMbS6f/2Q==)
+![Image](https://www.dogtime.com/assets/uploads/2011/01/file_23018_borzoi.jpg)
