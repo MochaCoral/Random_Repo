@@ -82,4 +82,15 @@ what you want to do is copy the private key from your local machin to the home d
 ![key pair](https://lh3.googleusercontent.com/8Et1voG_67hC-dOwt4Ra5NQ-Rn0uCYPns6s0-y3QlvdeWzEcEqG6VYE_s37Gln6O0fi1_xDuVwonjHf9pI7Ubyt88_SNl1SauGSHsczXxubLjTPgpFnz-4h2CJ6VaKHHiKJpnJQvNlIf_AHoCIKCUdEbljf4XXKTdhJgVpGlrHDNiNYayo4FvLTQhNr6sBxZ6t0YLOIUuTBohCtGRgSfDO_clWExwnLg1FQ49pFxxWin6vGhcomF8O14EIVzgWFuDyHeastV8jhBf1LUpE-F9nYfV9tkN4vde23aGjcIH8N_hxxhx0XDTP7ZpJc8F1pOiqvzcriZgz6QpdotXvm7NFKE5Rg4M0GYTbEFRSgfrhdvaBjWYdGX9B8pDv3gIq50dTHcbJ1hOWG_1hXdgcuJWwypcYEVWyYL_rl7WeM7MCbOFFy3nCy-hNN0pBrvke0Gzj3BFBTc2BSCSuadSEd9VwfSiKPu2m0DrlV4Q2MaJjtxEQ26BqCe01VsQ2VEypZwMbbIoFfUD7EbwNwQQpvxwXKiQ_rMV85AW8wxRVAIgNh7A9JJr_6ZJe1WXhW6xYyibli1nTAnYDAFny-t4gPsm5MOx2gbcgdubhgpgdigJID3kYfysnSZvDhb3ZjYC-hjPLk3memrtNkZ38OSAuGW4Z8Y0rUW4gsrV5LYOWpMBnVwtaT3e7_Njs60Nbg72tqlRteBQ2wh7j5GvU-Jr2143Il9tA=w801-h220-no?authuser=0)
 > This image shows the directory where the pair of keys have been saved, keep an eye the one without an extension 
 
-Once you have done this, you can use `scp` to shoot your key through to your desired shell 
+Once you have done this, you can use `scp` to shoot your key through the tubes of the internet to your desired shell (remember to create the directory `~/.ssh/authorized_keys` in your remote shell, that is the desired destination for the key using the command `mkdir`)
+
+From there onwards, you can access your remote shell with ease.
+
+## A few more things for making ssh more pleasant
+---
+- you can run commands directly to the remote shell via the `ssh` you've been using before, as in:
+
+`ssh cs15lwi22@ieng6.ucsd.edu "mkdir new-dir"`
+- you can also perform multiple commands in a single line by using semicolons, like:
+
+`cd ..; javac Example-file.java; java Example-file.java`
