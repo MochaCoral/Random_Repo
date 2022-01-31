@@ -45,8 +45,17 @@ According to the print statement, the culprit line for the exception thrown is o
 
 ` toReturn.add(markdown.substring(openParen + 1, closeParen));` 
 
-It seems like the method is trying to access an open parantheses that doesn't exist in the current markdown file. It seems that when the parser initializes the index values for the open and close parantheses, it defaults to the value of `previousIndex`, which is -1. When it tries to create a substring on line 21, the method runs into a negative value and throws an index out of bounds exception.
+It seems like the method is trying to access an open parantheses that doesn't exist in the current markdown file. When the parser initializes the index values for the open and close parantheses variables, it defaults to the value of `previousIndex`, -1. When it tries to create a substring on line 21, the method runs into a negative value and throws an index out of bounds exception.
 
 ## Code Change the Thirdst
 ---
 
+[JUnit Tester](https://github.com/hungrypingu/markdown-parse/commit/14ae72c6926f2b1bc482c0d59373452aeb685ed9)
+
+![hello](images/junit-testers.PNG)
+
+This next commit involves the creation of a new java file whose purpose was to import JUnit testers and use those to help with testing use cases for the parser. I included this commit to feature the lines of code changed as part of the tester files creation. But the failure inducing input involves another lab members environment, where this statement was printed:
+
+![terminal](images/unnamed.png)
+
+When this lab member was compiling the file containing the tests, they had forgotten to use the right syntax for file paths in the command line, and when the code was compiled, the code had failed to find the java library containing the assert tests and other testers that the code requires. Thus, when the code is run, java pretends that the library doesn't exist in the same directory, and isn't able to resolve the first call to the method `assertTrue`, despite the statement being true. 
