@@ -1,5 +1,5 @@
 # Laboratory Report Numero Dos
-## Code Change the first 
+## Code Change the firstnd
 ---
 
 [the commit](https://github.com/MochaCoral/markdown-parse/commit/2af026d7e54d063a6de8051979c4960c52084dba)
@@ -32,8 +32,21 @@ This line is intended to terminate the loop for parsing links in a provided mark
 
 ## Code change the secondth
 ---
-Another failure inducing input was created by a lab member, in which they created a line with a link with an empty link parameter and no paranthesis, something like this:
+![second fail](images/second-commit.PNG)
+Another failure inducing input was created by a lab member ([Here's their commit](https://github.com/cty3/markdown-parse/commit/7235ebcc936ce76fae20f6fb7b25b8cb0d31edb2)), in which they created a line with a link with an empty link parameter and no parantheses,  like this:
 
 `[]Link goes here!`
 
-This isn't the syntax for creating a link, it's missing paranthesis. However, it isn't an entirely uncommon edge case. There are surely going to be moments where brackets are used in a markdown file that aren't going to denote a link, similarly, parantheses could be used in a context outside of creating a link. 
+This isn't the syntax for creating a link, it's missing parantheses. However, it isn't an entirely uncommon edge case. There are surely going to be moments where brackets are used in a markdown file that aren't going to denote a link, similarly, parantheses could be used in a context outside of creating a link. When run, this code prints an index out of bounds exception, like the following (screencapped by my lab member):
+
+![index out of bounds](images/index-out.png)
+
+According to the print statement, the culprit line for the exception thrown is on line 21 of the getLinks method in the MarkdownParse class:
+
+` toReturn.add(markdown.substring(openParen + 1, closeParen));` 
+
+It seems like the method is trying to access an open parantheses that doesn't exist in the current markdown file. It seems that when the parser initializes the index values for the open and close parantheses, it defaults to the value of `previousIndex`, which is -1. When it tries to create a substring on line 21, the method runs into a negative value and throws an index out of bounds exception.
+
+## Code Change the Thirdst
+---
+
